@@ -1,0 +1,214 @@
+:root {
+    --level_bg--: url("bgimg/level2.png");
+    --margin--: 460px;
+}
+
+.level_2 {
+    --level_bg--: url("bgimg/level1.jpg");
+    --margin--: 440px;
+}
+
+body {
+    margin: 0px;
+}
+
+.starter {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(2, 0, 0);
+    opacity: 0.9;
+    font-family: cursive;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(109, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.win {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(2, 0, 0);
+    opacity: 1.5;
+    font-family: cursive;
+    font-size: 80px;
+    color: rgb(109, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.start {
+    margin-top: 200px;
+    position: absolute;
+    width: 50px;
+    background: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: var(--level_bg--);
+    background-size: cover;
+    overflow-x: hidden;
+    background-repeat: repeat-x;
+}
+
+.end {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(2, 0, 0);
+    opacity: 1.5;
+    font-family: cursive;
+    font-size: 60px;
+    color: rgb(109, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.entity {
+    position: absolute;
+    height: 200px;
+    margin-top: var(--margin--);
+    margin-left: 100px;
+}
+
+.distance {
+    position: absolute;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 5%;
+    color: rgb(109, 0, 0);
+}
+
+.score {
+    position: absolute;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
+    margin-left: 5%;
+    color: rgb(109, 0, 0);
+}
+
+.stone {
+    position: absolute;
+    height: 60px;
+    margin-top: 600px;
+}
+
+.coin {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 350px;
+}
+
+.coin_2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 480px;
+}
+
+.spin {
+    position: absolute;
+    height: 100px;
+    margin-top: 400px;
+}
+
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red;
+    border-radius: 20%;
+}
+
+.setting {
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 90%;
+}
+
+.unmute {
+    position: absolute;
+    margin-top: 600px;
+    width: 50ox;
+}
+
+.info {
+    position: absolute;
+    margin-top: 600px;
+    left: 5%;
+}
+
+.panel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    margin-top: 20vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: dimgray;
+    border-radius: 5%;
+}
+
+.close {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 10%;
+}
+
+.charecter {
+    width: 30%;
+    right: 0%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.charecter img {
+    height: 200px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.charecter img:hover {
+    transform: scale(1.5);
+}
+
+.level {
+    float: left;
+    width: 70%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.level img {
+    width: 400px;
+    cursor: pointer;
+}
+
+.level img:hover {
+    transform: scale(1.2);
+}

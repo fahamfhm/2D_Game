@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="Stylesheet" href="style.css" />
+    <link rel="icon" href="icon/start.png" />
+    <title>Far From Home</title>
+</head>
+
+<body class="body" onkeyup="key(event);">
+
+    <div class="background" id="background">
+        <img class="entity" id="entity" src="ninja_male/Idle__000.png" />
+        <p class="distance" id="distance">Distance : 0</p>
+        <p class="score" id="score">score : 0</p>
+
+    </div>
+    <div class="starter" id="starter">
+        <div>Far From Home</div>
+        <input type="image" id="start" src="icon/shadedDark16.png" onclick="start();" class="start">
+        <input type="image" id="setting" src="icon/shadedDark22.png" class="setting">
+
+        <input type="image" id="unmute" src="icon/shadedDark15.png" onclick="sound(this);" class="unmute">
+        <input type="image" id="info" src="icon/shadedDark33.png" class="info">
+
+        <div class="panel" id="panel">
+            <div class="charecter">
+                <p>character</p>
+                <img src="mode/female.png" onclick="change(this);" class="mode" id="mode" />
+            </div>
+            <div class="level">
+                <p>level</p>
+                <img src="bgimg/level1.jpg" class="levely" id="level">
+
+            </div>
+            <input type="image" id="close" src="icon/shadedDark35.png" class="close">
+        </div>
+        <div class="end" id="end">
+            <div>Game Lost</div>
+
+            <div id="endscore">Your Score : 0</div>
+
+            <input type="image" id="start" src="icon/shadedDark23.png" onclick="reload();" class="btn">
+        </div>
+        <div class="win" id="win">
+            <div>Congragulation</div>
+            <div id="endscore">Your Score : 0</div>
+
+            <input type="image" id="start" src="icon/shadedDark23.png" onclick="reload();" class="btn">
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
